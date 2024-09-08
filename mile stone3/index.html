@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Generator</title>
+    <link rel="stylesheet" href="file.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Resume builder by Ushna Shaikh</h1>
+        <form id="cv-form">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone:</label>
+                <input type="text" id="phone" name="phone">
+            </div>
+            <div class="form-group">
+                <label for="experience">Experience:</label>
+                <textarea id="experience" name="experience" rows="5"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="profile-pic">Profile Picture:</label>
+                <input type="file" id="profile-pic" name="profile-pic" accept="image/*">
+            </div>
+            <button type="button" onclick="generateCV()">Generate Resume</button>
+        </form>
+        <div id="Resume-output">
+            <h2>Your Resume</h2>
+            <div id="cv-content"></div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
